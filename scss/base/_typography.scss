@@ -1,0 +1,35 @@
+// scss/base/_typography.scss
+@use '../abstracts/variables' as vars;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: vars.$text-color;
+  background-color: #f7f9fa;
+  line-height: 1.6;
+  padding: 40px 20px;
+}
+
+h1 {
+  font-size: vars.$font-large;
+  color: vars.$text-color;
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: vars.$font-medium;
+  color: vars.$text-color;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+p {
+  margin-bottom: 16px;
+  color: #555;
+}

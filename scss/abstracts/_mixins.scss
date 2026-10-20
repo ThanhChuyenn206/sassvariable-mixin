@@ -1,0 +1,42 @@
+// scss/abstracts/_mixins.scss
+@use 'variables' as vars;
+
+// Mixin button-style với tham số $bg-color
+@mixin button-style($bg-color: vars.$primary-color) {
+  display: inline-block;
+  padding: vars.$padding-standard;
+  background-color: $bg-color;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+
+  &:hover {
+    filter: brightness(0.9);
+    transform: translateY(-2px);
+    box-shadow: vars.$box-shadow-default;
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+}
+
+// Mixin box-style cho container / card
+@mixin box-style {
+  padding: vars.$padding-standard;
+  border-radius: 8px;
+  box-shadow: vars.$box-shadow-default;
+  background-color: #fff;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+// Mixin flex-center căn giữa nhanh
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

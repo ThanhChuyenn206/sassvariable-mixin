@@ -1,0 +1,12 @@
+// scss/main.scss
+
+// 1. Abstracts (Variables, Mixins)
+@use 'abstracts/variables';
+@use 'abstracts/mixins';
+
+// 2. Base
+@use 'base/typography';
+
+// 3. Components
+@use 'components/buttons';
+@use 'components/cards';

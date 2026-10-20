@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #222;
+  background-color: #f7f9fa;
+  line-height: 1.6;
+  padding: 40px 20px;
+}
+
+h1 {
+  font-size: 32px;
+  color: #222;
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 28px;
+  color: #222;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+p {
+  margin-bottom: 16px;
+  color: #555;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: red;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.button:hover {
+  filter: brightness(0.9);
+  transform: translateY(-2px);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+.button:active {
+  transform: translateY(0);
+}
+.button--secondary {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #34495e;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.button--secondary:hover {
+  filter: brightness(0.9);
+  transform: translateY(-2px);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+.button--secondary:active {
+  transform: translateY(0);
+}
+
+.card {
+  padding: 10px 20px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  max-width: 450px;
+  margin: 20px auto;
+  border: 1px solid #eaeaea;
+}
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+}
+.card__content {
+  margin-bottom: 20px;
+}
+.card__actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+/*# sourceMappingURL=main.css.map */
